@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.head .task-input{
+    display: block;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 2rem;
+}
+
+
+.task-input:focus{
+    outline: none;
+}
+
+.filter-input-field {
+    display: block;
+    margin: 2rem;
+}
+
+.collection-item{
+    width: 50%; 
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    border: .5px solid #333;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+.collection-item:last-child{
+    border-bottom: 1px solid #333;
+}
+
+.btn-close{
+    font-size: 1rem;
+}

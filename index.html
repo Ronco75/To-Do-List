@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>To Do List</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="head card-body">
+
+            <h4 class="display-4">To Do List</h4>
+
+            <form id="task-form">
+                <input type="text" class="task-input" id="task" placeholder="Add Task..." autocomplete="off">
+                <button class="btn btn-dark">Add</button>
+            </form>
+
+        </div>
+        
+        <hr>
+
+        <div class="card-body">
+            <h4 class="display-4">Tasks</h4>
+
+            <div class="filter-input-field">
+                <input type="text" id="filter" class="task-input" placeholder="Filter" autocomplete="off">
+            </div>
+
+              <ul class="collection">
+                  <!-- <li class="collection-item"> Task
+                      <a href="#">
+                         <button type="button" class="btn-close" aria-label="Close"></button>
+                    </a>
+                </li> -->
+              </ul>
+
+              <button class="btn btn-danger" id="clear-btn">Clear Tasks</button>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
